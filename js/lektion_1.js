@@ -6,14 +6,17 @@ let L1_5 = document.querySelector("#L1_5");
 let L1_6 = document.querySelector("#L1_6");
 
 // Opgave 1
-function fullName(firstName, lastName) {
-  let greeting = "Welcome " + firstName + " " + lastName;
-  let newH3 = document.createElement("h3");
-  newH3.innerText = greeting;
-  L1_1.appendChild(newH3);
+
+function getFullName(firstName, lastName){
+  let fullName = firstName + " " + lastName;
+  let nameHeader = document.createElement("h3");
+  nameHeader.innerText = fullName;
+  L1_1.appendChild(nameHeader);
 }
 
 // Opgave 2
 
+
+
 // Function Calls
-fullName("Ukendt", "Person");
+fullName("Mathias", "Arenfeldt");
